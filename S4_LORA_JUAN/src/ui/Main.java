@@ -1,15 +1,12 @@
 package ui;
 
 import java.io.BufferedReader;
-//import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-//import java.io.OutputStreamWriter;
 
 public class Main {
 	
 	public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	//public static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	
 	public static void main(String[] args) throws IOException {
 		readArrayList();
@@ -52,7 +49,7 @@ public class Main {
 		   	iter++;
 	    }
 	    double average = ctrl*1.0/iter;
-	    String averageSt = String.format("%.1f", average);
+	    String averageSt = String.format("%.2f", average);
 	    String space = averageSt+"-"; //later space will be only " ". Just a space
 	    String toPrint = "";
         for (int i = 0; i<db.length; ++i) {
